@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Praveen Portfolio</title>
+        <link rel="stylesheet" href="src/output.css">
+    </head>
+
+    <body class="m-0 p-0 bg-[rgb(0,0,33)] text-white font-sans ">
+        <header>
+            <nav class="flex justify-around items-center h-[80px] bg-[rgb(4,_4,_50)]">
+                <div class="left flex justify-center w-[27%] text-[1.5rem]">Praveen's Portfolio</div>
+                <div class="right w-[72%] flex justify-end items-center pr-[5%]">
+                    <ul class="flex justify-around items-center h-[80px] bg-[rgb(4,_4,_50)]">
+                        <li class="[list-style:none] mx-[23px] my-[0]"><a
+                                class="no-underline text-[white] hover:text-[rgb(153,_153,_226)] hover:text-[1.03rem]"
+                                href="">Home</a></li>
+                        <li class="[list-style:none] mx-[23px] my-[0]"><a
+                                class="no-underline text-[white] hover:text-[rgb(153,_153,_226)] hover:text-[1.03rem]"
+                                href="/about.html">About</a></li>
+                        <!-- <li class="] mx-[23px] my-[0] inline-block">
+                            <button
+                                class="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-white "><a
+                                    class="no-underline text-[white]"
+                                    href="">Language</a>
+                                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                                    class="-mr-1 size-5 text-gray-400">
+                                    <path
+                                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                        clip-rule="evenodd" fill-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <menu anchor="bottom end" popover
+                                class="m-0 w-56 origin-top-right rounded-md bg-gray-800 p-0 outline outline-1 -outline-offset-1 outline-white/10 transition [--anchor-gap:theme(spacing.2)] [transition-behavior:allow-discrete] data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in">
+                                <div class="py-1">
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-none">Account
+                                        settings</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-none">Support</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-none">License</a>
+                                    <form action="#" method="POST">
+                                        <button type="submit"
+                                            class="block w-full px-4 py-2 text-left text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-none">Sign
+                                            out</button>
+                                    </form>
+                                </div>
+                            </menu>
+                        </li> -->
+                        <li class="relative mx-[23px] my-[0] list-none">
+                            <!-- Button -->
+                            <button onclick="toggleLang()" class="inline-flex items-center gap-x-1.4 text-white hover:text-[rgb(153,153,226)]">
+                                Language
+                                <svg class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" />
+                                </svg>
+                            </button>
+                        
+                            <!-- Dropdown -->
+                            <div id="langMenu" class="hidden absolute right-0 mt-2 w-full rounded-md bg-gray-800 shadow-lg">
+                                <!-- <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-700">English</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-700">Hindi</a> -->
+                                <ul class="w-full grid grid-cols-3 grid-rows-2 py-6">
+                                    <li><img class="w-16 invert" src="/img/HTML5_logo.png" alt=""></li>
+                                    <li><img class="w-11  invert" src="/img/CSS3_Logo.png" alt=""></li>
+                                    <li><img class="w-16" src="/img/javascript.jpg" alt=""></li>
+                                    <li><img class="w-16" src="/svg/react_logo.svg" alt=""></li>
+                                    <li><img class="w-[70px] invert" src="/img/nextjs.svg" alt=""></li>
+                                    <li><img class="w-[170px] " src="/img/MongoDB_Logo.svg" alt=""></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="[list-style:none] mx-[23px] my-[0]"><a
+                                class="no-underline text-[white] hover:text-[rgb(153,_153,_226)] hover:text-[1.03rem]"
+                                href="/src/readme.md">Projects</a></li>
+                        <li class="[list-style:none] mx-[23px] my-[0]"><a
+                                class="no-underline text-[white] hover:text-[rgb(153,_153,_226)] hover:text-[1.03rem]"
+                                href="">Contect Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="firstSection flex justify-around items-center w-full h-full pl-16 ">
+                    <div class="leftSection text-[3em] py-[0] m-5 mb-0 w-3/5">
+                        <span> Hi, My name is</span> <span class="purple text-[#3e2987]">Praveen</span>
+                        <div class="and px-[0] py-[10px]">and I am a </div>
+                        <!-- <div>Developer</div> -->
+                        <div class="text-[#0011cb]"> <span id="element"></span>
+                        </div>
+
+                        <div class="btn py-[20px] border-none rounded-full no-underline text-xl mx-[0] ">
+                            <button
+                                class="btnall btn1 no-underline cursor-pointer text-[#c5c4c4] mr-[15px] p-[13px] pl-0 rounded-[10px]">
+                                <a class="no-underline hover:underline"
+                                    href="https://translate.google.com/?sl=en&tl=hi&op=translate">Download
+                                    Resume</a></button>
+                            <button
+                                class="btnall btn2 bg-[#b3bbbe] font-bold p-2 rounded-lg text-black hover:underline"><a
+                                    href="">Visit
+                                    Github</a></button>
+                        </div>
+                    </div>
+                    <div class="rightSection w-2/5">
+                        <img class="p-[20px] w-[48%]" src="/img/bg.png" alt="">
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <hr class="border-[0] bg-[#e6e6e6] h-[0.1px] ">
+
+            <div class="footer flex w-full">
+                <div class="ready w-[50%] font-bold px-[86px] py-[30px]">
+                    <span>Ready for </span><span id="ready"></span>
+                </div>
+                <div class="tocontent flex w-[50%] ">
+                    <ul class="w-full gap-[45px] text-2xl py-4 px-0">
+                        <li
+                            class="flex w-1/3 justify-center items-center gap-2 hover:underline hover:text-gray-200 text-gray-300 pt-2">
+                            <a class="cursor-pointer social-logo "
+                                href="https://github.com/CodedPraveen/Project/tree/main">Github</a>
+                            <img class="w-[30px] flex h-[30px] invert" src="/img/github.png" alt="">
+                        </li>
+                        <!-- <li class="flex w-1/3 justify-center items-center"><a class="cursor-pointer social-logo " href="https://www.instagram.com/pavitrapraveen_06/">Instagram</a>
+                        <img class="w-[30px] flex h-[30px]" src="/img/instagram.png" alt="">
+                    </li>
+                    <li class="flex w-1/3 justify-center items-center"><a class="cursor-pointer social-logo " href="https://x.com/Pavitra_Praveen">x</a>
+                        <img class="w-[30px] flex h-[30px]" src="/img/x-logo.png" alt="">
+                    </li> -->
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <hr class="border-[0] bg-[#e6e6e6] h-[0.1px] ">
+        <footer class="flex  w-[100%]">
+            <ul class="w-full flex justify-around py-6">
+                <li><img class="w-16 invert" src="/img/HTML5_logo.png" alt=""></li>
+                <li><img class="w-11  invert" src="/img/CSS3_Logo.png" alt=""></li>
+                <li><img class="w-16" src="/img/javascript.jpg" alt=""></li>
+                <li><img class="w-16" src="/svg/react_logo.svg" alt=""></li>
+                <li><img class="w-[70px] invert" src="/img/nextjs.svg" alt=""></li>
+                <li><img class="w-[170px] " src="/img/MongoDB_Logo.svg" alt=""></li>
+            </ul>
+        </footer>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element ', {
+                strings: ['Web Developer.', 'Web Programmer.'],
+                typeSpeed: 50,
+            });
+            var typed = new Typed('#ready', {
+                strings: ['Internship.', 'Learn.', 'Gain experience.', 'Work with Team.', 'work with this language.'],
+                typeSpeed: 50,
+            });
+                    function toggleLang() {
+                        document.getElementById("langMenu").classList.toggle("hidden");
+  }
+
+        </script>
+
+    </body>
+
+</html>
